@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Visual Plumbing Manual &amp; Pipe Dissection</title>
+  <link rel="stylesheet" href="./styles.css?v=20261120_1155" />
+</head>
+<body>
+  <div id="app-view" class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="brand-dot"></span>
+        <div>
+          <div class="topbar-title">Visual Plumbing Manual</div>
+          <div id="source-meta" class="topbar-sub">Illustrated Pipe &amp; Fluid Guide</div>
+        </div>
+      </div>
+
+      <div id="section-switcher" class="sec-switcher" role="tablist" aria-label="Pipes Section">
+        <button type="button" id="sec-manual-btn" class="sec-switch-btn active">📘 Visual Plumbing Manual</button>
+        <button type="button" id="sec-pipes-btn" class="sec-switch-btn">🔧 Pipe Engine Dissection</button>
+        <button type="button" id="sec-modstudio-btn" class="sec-switch-btn">🎛️ Mod Visual Studio</button>
+      </div>
+
+      <div class="topbar-controls">
+        <input
+          id="search-input"
+          type="search"
+          class="search-input"
+          placeholder="Search simple guide: pump, gas, 600, buffer, manifold..."
+        />
+      </div>
+    </header>
+
+    <!-- Public-Facing Visual Plumbing Manual Hero Banner -->
+    <section id="manual-hero-banner" class="pipe-hero-banner manual-hero-banner">
+      <div class="pipe-hero-head">
+        <div>
+          <span class="pipe-hero-pill manual-hero-pill">PUBLIC EDITION · ILLUSTRATED GUIDE FOR PIONEERS</span>
+          <h2>The Visual Plumbing Manual: A Simple Guide to Pipelines</h2>
+        </div>
+        <div class="pipe-hero-tiers">
+          <span>1. Basics</span> → <span>2. Pumps, Valves &amp; Buffers</span> → <span>3. Real Setups</span> → <span>4. Special Circuits</span> → <span>5. Tricks &amp; FAQ</span>
+        </div>
+      </div>
+      <p class="pipe-hero-sub">
+        No math jargon, no code — just clear visual diagrams, color-coded rules, interactive quizzes, and simple plain-English build guides.
+      </p>
+    </section>
+
+    <!-- Pipe & Fluid Bible Hero Banner -->
+    <section id="pipe-hero-banner" class="pipe-hero-banner hidden">
+      <div class="pipe-hero-head">
+        <div>
+          <span class="pipe-hero-pill">DEFINITIVE EDITION · BINARY VERIFIED</span>
+          <h2>The Pipe, Fluid &amp; Gas Engine Dissection</h2>
+        </div>
+        <div class="pipe-hero-tiers">
+          <span>1. Basics (ELI5)</span> → <span>2. Intermediate</span> → <span>3. Special Circuits</span> → <span>4. Master Math &amp; Placement</span> → <span>5. Community Audit &amp; FAQ</span>
+        </div>
+      </div>
+      <p class="pipe-hero-sub">
+        Simplified down to 5-second visual rules and clean schematics—backed by Red-Team binary verification and interactive circuit sandboxes.
+      </p>
+    </section>
+
+    <!-- Pipe Mod Visual Studio Hero Banner (removable when video ships) -->
+    <section id="modstudio-hero-banner" class="pipe-hero-banner modstudio-hero-banner hidden">
+      <div class="pipe-hero-head">
+        <div>
+          <span class="pipe-hero-pill modstudio-hero-pill">PIPE X-RAY MOD v1.3 · LIVE TUNING STUDIO</span>
+          <h2>Pipe X-Ray Mod Visual Studio &amp; Custom Asset Configurator</h2>
+        </div>
+        <div class="pipe-hero-tiers">
+          <span>Fluids</span> → <span>Aero Indicators</span> → <span>Glass Shell</span> → <span>HUD Safe Zone</span> → <span>PNGs &amp; F9 JSON Export</span>
+        </div>
+      </div>
+      <p class="pipe-hero-sub">
+        Visually adjust every fluid color, minimum brightness floor, arrow speed/shape, font scale, HUD margin, or custom PNG sprite — then export <strong>PipeXRayConfig.json</strong> (reload in-game with <strong>F9</strong>).
+      </p>
+    </section>
+
+    <nav id="focus-tabs" class="focus-tabs" aria-label="Chapter or tier filter"></nav>
+    <main id="board-container" class="board-list"></main>
+  </div>
+
+  <div id="toast" class="toast hidden">Copied to clipboard!</div>
+
+  <script src="./pipes_app.js?v=20261120_1155" type="module"></script>
+</body>
+</html>
